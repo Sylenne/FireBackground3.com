@@ -1,31 +1,59 @@
 <!DOCTYPE html>
-<html>
-  <head>
-  	   <meta charset="UTF-8" />
-  	   <title>DocumentSansNom</title>
-  	   <style type="">
-  	   </style>
-  </head>
+<html lang="en">
+<head>
+    <title>FireBackground</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <meta itemprop="name" content="FireBackground">
+    <meta itemprop="description" content="made with cables">
+    <meta itemprop="image" content="screenshot.png">
+    <meta name="description" content="made with cables" />
 
- <body>
- 	<div>
- 	<div>
- 		<p style="color: white;">
- 			Graphic designer interested in the meaning of fantasy in relation to touch, art, and sense;
-Roland d'Herbemont is currently a student at the Central Saint Martins School of Art and Design and investigating is own style through mix media, 3D modeling and web design.
-The reason for this online exhitbition is to showcase "RIDIA", a mystical universe where premonitary signs and symbolic dialectic  is suppose to echoe an intimate interpretation of today's world.
-In a series of 6 paintings currated into a space of interaction, Roland d'Herbemont is giving a place for his artwork to shine and begin an dialogue with the spectator like a mathematic suite.
-" I wanted everything to be focuse, silent and to ba as cohesive as possible for the viewer to forget is own body, own self. To become as free and as sensitive one can be when he wakes up from a bad dream,...when is vision is still wobbly, and in a certain way, prophetic I want to say."
-RIDIA online exhibition has been made possible thanks to the support and use of the softwear Cables gl and Github.com. Roland wanted to make the code of his website open source to make it a contribution into the world and without taking any credit on anything but the artistic direction.
-Enjoy!
- 		</p>
- 	</div>
- 	<div>
- 		<canvas id="glcanvas" width="100vw" height="100vh"></canvas>
- 	</div>
- </div>
+    <style>
+        body {
+            margin: 0;
+            background-color: #000;
+            color: #fff;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        canvas {
+            display: block;
+            position: absolute;
+        }
+        footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            box-sizing: border-box;
+            width: 100vw;
+            padding: 20px;
+            text-align: right;
+            font-size: 18px;
+            color: #24baa7;
+        }
+        footer a, footer a:hover, footer a:active {
+            color: #24baa7;
+        }
+    </style>
 
- 	    <script>
+</head>
+<body>
+    <div>
+    <canvas id="glcanvas" width="100vw" height="100vh"></canvas>
+    
+    <p style="color: white; position: absolute;" > Graphic designer interested in the meaning of fantasy in relation to touch, art, and sense;<br />
+Roland d'Herbemont is currently a student at the Central Saint Martins School of Art and Design and investigating is own style through mix media, 3D modeling and web design.<br />
+The reason for this online exhitbition is to showcase "RIDIA", a mystical universe where premonitary signs and symbolic dialectic are echoeing an intimate interpretation of today's world.<br />
+In a series of 6 paintings currated into a space of interaction, Roland d'Herbemont is giving a place for his artwork to shine and begin an dialogue with the spectator like a mathematic suite.<br />
+" I wanted everything to be focuse, silent and to ba as cohesive as possible for the viewer to forget is own body, own self. To become as free and as sensitive one can be when he wakes up from a bad dream,...when is vision is still wobbly, and in a certain way, prophetic I want to say."<br />
+RIDIA Online Exhibition has been made possible thanks to the support and use of the softwears Cables gl and Github.com. Roland wanted to make the code of his website open source to make it a contribution into the world and without taking any credit on anything but the artistic direction.<br />
+        Enjoy!</p>
+    </div>
+    <libs/>
+    <script type="text/javascript" src="js/patch.js" async></script>
+    <corelibs/>
+
+    <script>
         /**
          * Called when there was a cables error.
          * @param {string} errId - ID of the error, e.g. 'NO_WEBGL' or 'NO_WEBAUDIO'
@@ -56,5 +84,5 @@ Enjoy!
             });
         });
     </script>
-  </body>
+</body>
 </html>
